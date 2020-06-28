@@ -7,8 +7,8 @@ app.set("views", path.join(__dirname, "./views"));
 app.set("view engine", "pug");
 
 app.get("/", (req: Request, res: Response) => {
-  res.send({
-    message: "Hello",
+  res.render("home", {
+    username: "SirwanAfifi",
   });
 });
 
